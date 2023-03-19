@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatchan Muhammad Hakim</title>
+  <style>
+    body{
+      padding: 0px;
+      margin: 0px;
+      background-position: center;
+      background-color: #245953;
+    }
+    .countainer-form{
+      padding: 10px;
+      margin-left: 450px;
+      margin-top: 100px;
+    }
+    .countainer-button{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: #E49393;
+      font-size: 14pt;
+      margin-left: 44px;
+      width: auto;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 4px;
+      cursor: grabbing;
+    }
+    .countainer-input::placeholder{
+      font-family: monospace;
+      font-size: 10pt;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: #E49393;
+    }
+    .countainer-input{
+      padding: 10px;
+      margin: 10px;
+      width: 400px;
+      background-color: #D8D8D8;
+      border-radius: 10px;
+    }
+    .countainer-h3{
+      margin-left: 170px;
+      color: #E49393;
+      font-family: monospace;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 15pt;
+      cursor: no-drop;
+    }
+    .countainer-pragrf{
+      margin-left: 90px;
+      color: #E49393;
+      font-family: monospace;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 12pt;
+      cursor: no-drop;
+    }
+    .countainer-span{
+      margin-left: 2px;
+      color: #E49393;
+      font-family: monospace;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 12pt;
+      cursor: no-drop;
+    }
+    .countainer-p-span{
+      margin-left: 11px;
+      color: #E49393;
+      font-family: monospace;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 11pt;
+      cursor: no-drop;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="countainer">
+    <div class="countainer-div">
+      <form name="calc" class="countainer-form" id="calc" action="#">
+        <h3 class="countainer-h3">calculator</h3>
+        <p class="countainer-pragrf">akademi fullstack web developer</p>
+        <tr class="countainer-tr">
+          <td class="countainer-td">
+            <input class="countainer-input" type="text" name="inputAngka1" id="angka1" placeholder="masukan angka"><br>
+            <input class="countainer-input" type="text" name="inputAngka2" id="angka2" placeholder="masukan angka"><br>
+            <p class="countainer-p-span">The Result is : <br> <br>
+            <span class="countainer-span" id="result"></span>
+          </td>
+          <td><br>
+            <input class="countainer-button" type="button" onclick="tambahBy()" value="+">
+            <input class="countainer-button" type="button" onclick="kurangBy()" value="-">
+            <input class="countainer-button" type="button" onclick="kaliBy()" value="*">
+            <input class="countainer-button" type="button" onclick="bagiBy()" value="\">
+            <input class="countainer-button" type="button" onclick="pangkatBy()" value="^">
+          </td>
+        </tr>
+      </form>
+    </div>
+  </div>
+  <script src="js/calc.js"></script>
+</body>
+</html>
